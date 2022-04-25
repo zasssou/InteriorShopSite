@@ -1,0 +1,7 @@
+@use '../global/index' as global;
+
+body {
+  font-family: global.$default-font-family;
+  font-size: global.$default-font-size;
+  line-height: global.$default-line-height;
+}
