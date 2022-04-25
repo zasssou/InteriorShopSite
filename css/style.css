@@ -400,4 +400,58 @@ th {
   font-weight: bold;
 }
 
+.content-wrapper {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-rows: 88px auto 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  font-size: 22.5px;
+  font-weight: bold;
+}
+
+.menu-button {
+  width: 30px;
+  height: 30px;
+  background-color: #aaa;
+}
+
+.product-card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 6% 3%;
+}
+
+.product-card__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns-link-list {
+  display: flex;
+}
+.sns-link-list__item {
+  margin-right: 30px;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
