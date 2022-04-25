@@ -485,15 +485,15 @@ th {
   align-items: center;
 }
 
-.u-font-xsmall {
+.u-font--xsmall {
   font-size: 10px;
 }
 
-.u-font-small {
+.u-font--small {
   font-size: 12px;
 }
 
-.u-font-middle {
+.u-font--middle {
   font-size: 14px;
 }
 
