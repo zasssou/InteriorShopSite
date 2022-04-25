@@ -435,6 +435,10 @@ th {
 
 .c-logo {
   width: 180px;
+  height: 25px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .c-hamburger-menu {
@@ -464,6 +468,12 @@ th {
 }
 .c-hamburger-menu:hover::after {
   transform: rotate(-45deg);
+}
+
+.c-page-title {
+  height: 83px;
+  display: flex;
+  align-items: center;
 }
 
 .c-product-card__img {
