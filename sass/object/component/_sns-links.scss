@@ -1,0 +1,9 @@
+@use '../../global/index' as global;
+
+.c-sns-links {
+  display: flex;
+
+  &__item {
+    margin-right: 30px;
+  }
+}
