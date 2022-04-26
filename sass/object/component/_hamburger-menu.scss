@@ -1,0 +1,36 @@
+@use '../../global/index' as global;
+
+.c-hamburger-menu {
+  width: 30px;
+  height: 30px;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: global.$black;
+    transition: all 0.5s;
+  }
+
+  &::before {
+    top: 11px;
+  }
+  &::after {
+    top: 19px;
+  }
+
+  // クリック時動作に後で書き換え
+  &:hover::before,
+  &:hover::after {
+    top: 14px;
+  }
+  &:hover::before {
+    transform: rotate(45deg);
+  }
+  &:hover::after {
+    transform: rotate(-45deg);
+  }
+}

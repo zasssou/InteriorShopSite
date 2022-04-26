@@ -1,0 +1,18 @@
+@use '../../global/index' as global;
+
+.c-company-info {
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  &__key,
+  &__value {
+    padding: 20px 10px;
+    border-bottom: 1px solid #DCDBDB;
+  }
+
+  &__key:last-of-type,
+  &__value:last-of-type {
+    border-bottom: none;
+  }
+}

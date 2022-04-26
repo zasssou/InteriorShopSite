@@ -1,0 +1,7 @@
+@use '../global/index' as global;
+
+.l-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
