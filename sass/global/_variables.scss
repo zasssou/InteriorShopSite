@@ -3,11 +3,27 @@
 // ------------------------------------------------
 $black: #000;
 $white: #fff;
+$gray: #DCDBDB;
 
 
 // ------------------------------------------------
 // font
 // ------------------------------------------------
+$font-xsmall: 10px;
+$font-small: 12px;
+$font-middle: 14px;
+
 $default-font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif';
-$default-font-size: 12px;
+$default-font-size: $font-small;
 $default-line-height: 1.5em;
+
+
+// ------------------------------------------------
+// value
+// ------------------------------------------------
+$content-max-width: 1360px;
+$content-horizontal-padding: 40px;
+$about-max-width: 600px;
+$company-max-width: 600px;
+$product-detail-width: 800px;
+$breakpoint: 900px;

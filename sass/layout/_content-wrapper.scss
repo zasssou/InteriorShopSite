@@ -1,11 +1,11 @@
 @use '../global/index' as global;
 
 .l-content-wrapper {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  max-width: 1360px;
+  max-width: global.$content-max-width;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 global.$content-horizontal-padding;
   display: grid;
   grid-template-rows: 88px auto 42px;
 }

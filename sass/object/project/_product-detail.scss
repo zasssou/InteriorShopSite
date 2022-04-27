@@ -1,7 +1,7 @@
 @use '../../global/index' as global;
 
-.p-product-description {
-  max-width: 800px;
+.p-product-detail {
+  max-width: global.$product-detail-width;
   margin-bottom: 60px;
   display: grid;
   grid-template-columns: 400px 1fr;

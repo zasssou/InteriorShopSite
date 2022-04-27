@@ -1,7 +1,6 @@
 @use '../../global/index' as global;
 
 .c-location-map {
-  margin: 20px 0;
   filter:grayscale(100%);
   transition: filter 0.5s;
 
