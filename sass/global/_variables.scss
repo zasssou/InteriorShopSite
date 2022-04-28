@@ -2,6 +2,7 @@
 // color
 // ------------------------------------------------
 $black: #000;
+$dark-gray: #333;
 $white: #fff;
 $gray: #DCDBDB;
 
@@ -9,11 +10,11 @@ $gray: #DCDBDB;
 // ------------------------------------------------
 // font
 // ------------------------------------------------
-$font-xsmall: 10px;
-$font-small: 12px;
-$font-middle: 14px;
+$font-xsmall: 1.0rem;
+$font-small: 1.2rem;
+$font-middle: 1.4rem;
 
-$default-font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif';
+$default-font-family: 'Meiryo', 'sans-serif';
 $default-font-size: $font-small;
 $default-line-height: 1.5em;
 

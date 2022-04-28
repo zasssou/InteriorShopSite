@@ -1,7 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
-  font-size: 12px;
+  font-family: "Meiryo", "sans-serif";
+  font-size: 1.2rem;
   line-height: 1.5em;
+  color: #333;
+}
+
+a {
+  transition: all 0.5s;
+}
+a:hover {
+  opacity: 0.7;
 }
 
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -427,7 +439,7 @@ th {
 }
 
 .c-company-info {
-  font-size: 14px;
+  font-size: 1.4rem;
   display: grid;
   grid-template-columns: 30% 70%;
 }
@@ -497,7 +509,7 @@ th {
   padding: 36px 50px;
 }
 .c-nav__item {
-  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 14px;
 }
 
@@ -538,6 +550,10 @@ th {
 .c-product-card__img {
   width: 100%;
   margin-bottom: 11px;
+  transition: all 0.5s;
+}
+.c-product-card__img:hover {
+  opacity: 0.7;
 }
 
 .c-product-specs {
@@ -585,15 +601,15 @@ th {
 }
 
 .u-font--xsmall {
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .u-font--small {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .u-font--middle {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .u-position--center {
