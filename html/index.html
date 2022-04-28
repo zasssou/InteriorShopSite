@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../img/favicon.ico">
   <link rel="stylesheet" href="../css/style.css">
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../js/main.js"></script>
   <title>Furniture Design</title>
 </head>
 <body>
   <div class="l-content-wrapper">
 
-    <header class="l-header">
+    <header id="header" class="l-header">
       <a href="index.html"><h1 class="c-logo" style="background-image: url('../img/logo.svg');"></h1></a>
-      <button id="hamburger-menu" class="c-hamburger-menu"></button>
+      <button class="c-hamburger-menu"></button>
       <nav class="c-nav">
         <ul>
-          <li class="c-nav__item"><a href="">PRODUCTS</a></li>
-          <li class="c-nav__item"><a href="">ABOUT</a></li>
-          <li class="c-nav__item"><a href="">COMPANY</a></li>
-          <li class="c-nav__item"><a href="">CONTACT</a></li>
+          <li class="c-nav__item"><a href="products-1.html">PRODUCTS</a></li>
+          <li class="c-nav__item"><a href="about.html">ABOUT</a></li>
+          <li class="c-nav__item"><a href="company.html">COMPANY</a></li>
+          <li class="c-nav__item"><a href="mailto:address">CONTACT</a></li>
         </ul>
       </nav>
+      <div class="c-overlay"></div>
     </header>
   
     <main class="l-main">
-      <button>btn</button>
       <ul class="p-product-card-list">
         <li class="p-product-card-list__item">
           <button class="c-product-card" onclick="location.href='product-detail-1.html'">
@@ -100,7 +101,5 @@
     </footer>
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="../js/main.js"></script>
 </body>
 </html>

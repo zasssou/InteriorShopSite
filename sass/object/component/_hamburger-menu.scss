@@ -4,6 +4,7 @@
   width: 30px;
   height: 30px;
   position: relative;
+  z-index: 2;
 
   &::before,
   &::after {
@@ -23,14 +24,17 @@
   }
 }
 
-.menu-open {
+.open-menu .c-hamburger-menu {
   &::before,
   &::after {
-    top: 14px;
+    top: 14px;    
+    background-color: global.$white;
   }
+
   &::before {
     transform: rotate(45deg);
   }
+
   &::after {
     transform: rotate(-45deg);
   }

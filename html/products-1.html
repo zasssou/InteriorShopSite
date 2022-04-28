@@ -11,9 +11,18 @@
 <body>
   <div class="l-content-wrapper">
 
-    <header class="l-header">
+    <header id="header" class="l-header">
       <a href="index.html"><h1 class="c-logo" style="background-image: url('../img/logo.svg');"></h1></a>
       <button class="c-hamburger-menu"></button>
+      <nav class="c-nav">
+        <ul>
+          <li class="c-nav__item"><a href="products-1.html">PRODUCTS</a></li>
+          <li class="c-nav__item"><a href="about.html">ABOUT</a></li>
+          <li class="c-nav__item"><a href="company.html">COMPANY</a></li>
+          <li class="c-nav__item"><a href="mailto:address">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="c-overlay"></div>
     </header>
   
     <main class="l-main">
@@ -124,5 +133,7 @@
     </footer>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

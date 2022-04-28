@@ -1,11 +1,17 @@
-let isMenuOpen = false;
+$(function() {
 
-$('#hamburger-menu').on('click', () => {
-  if (isMenuOpen) {
-    $('#hamburger-menu').removeClass('menu-open');
-    isMenuOpen = false;
-  } else {
-    $('#hamburger-menu').addClass('menu-open');
-    isMenuOpen = true;
-  }
+  $('.c-hamburger-menu').on('click', () => {
+    if ($('#header').hasClass('open-menu')) {
+      $('#header').removeClass('open-menu');
+    } else {
+      $('#header').addClass('open-menu');
+    }
+  });
+
+  $('.c-overlay').on('click', () => {
+    if ($('#header').hasClass('open-menu')) {
+      $('#header').removeClass('open-menu');
+    }
+  });
+
 });
