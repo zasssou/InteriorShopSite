@@ -1,5 +1,14 @@
 # InteriorShopSite
+[CodeStepのお題](https://code-step.com/store2-menu/) に沿って作成
 
-https://code-step.com/store2-menu/
+架空の家具ショップのサイト
 
-https://xd.adobe.com/view/69f16104-28c8-466c-b1ac-e315cfd4f86a-3ca2/grid
+
+#### 制作期間
+2022/4/24 ~ 2022/4/28 15時間ほど
+
+- FLOCSS & SASS
+- 後ほどWordpress導入
+
+#### 完成品
+
