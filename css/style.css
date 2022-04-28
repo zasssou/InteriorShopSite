@@ -458,13 +458,14 @@ th {
 .c-hamburger-menu::after {
   top: 19px;
 }
-.c-hamburger-menu:hover::before, .c-hamburger-menu:hover::after {
+
+.menu-open::before, .menu-open::after {
   top: 14px;
 }
-.c-hamburger-menu:hover::before {
+.menu-open::before {
   transform: rotate(45deg);
 }
-.c-hamburger-menu:hover::after {
+.menu-open::after {
   transform: rotate(-45deg);
 }
 
@@ -482,6 +483,22 @@ th {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.c-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 36px 50px;
+}
+.c-nav__item {
+  font-size: 14px;
+  margin-bottom: 14px;
 }
 
 .c-page-title {

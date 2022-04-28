@@ -21,16 +21,17 @@
   &::after {
     top: 19px;
   }
+}
 
-  // クリック時動作に後で書き換え
-  &:hover::before,
-  &:hover::after {
+.menu-open {
+  &::before,
+  &::after {
     top: 14px;
   }
-  &:hover::before {
+  &::before {
     transform: rotate(45deg);
   }
-  &:hover::after {
+  &::after {
     transform: rotate(-45deg);
   }
 }

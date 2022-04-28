@@ -1,5 +1,5 @@
 @use '../global/index' as global;
 
 .l-footer {
-  @include global.flex-center-between
+  @include global.flex-center-between;
 }
