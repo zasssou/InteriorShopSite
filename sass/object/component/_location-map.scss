@@ -1,0 +1,10 @@
+@use '../../global/index' as global;
+
+.c-location-map {
+  filter:grayscale(100%);
+  transition: filter 0.5s;
+
+  &:hover {
+    filter: none;
+  }
+}

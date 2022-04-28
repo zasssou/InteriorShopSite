@@ -1,0 +1,13 @@
+@use '../../global/index' as global;
+
+.u-font--xsmall {
+  font-size: global.$font-xsmall;
+}
+
+.u-font--small {
+  font-size: global.$font-small;
+}
+
+.u-font--middle {
+  font-size: global.$font-middle;
+}
