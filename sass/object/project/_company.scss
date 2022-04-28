@@ -1,0 +1,7 @@
+@use '../../global/index' as global;
+
+.p-company {
+  max-width: global.$company-max-width;
+  display: grid;
+  row-gap: 20px;
+}

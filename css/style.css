@@ -401,13 +401,19 @@ th {
 }
 
 .l-content-wrapper {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
   display: grid;
   grid-template-rows: 88px auto 42px;
+}
+
+.l-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .l-header {
@@ -420,31 +426,24 @@ th {
   padding-bottom: 40px;
 }
 
-.l-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.p-product-card-list {
+.c-company-info {
+  font-size: 14px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px 3%;
-  margin-bottom: 40px;
+  grid-template-columns: 30% 70%;
 }
-
-.c-logo {
-  width: 180px;
-  height: 25px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.c-company-info__key, .c-company-info__value {
+  padding: 20px 10px;
+  border-bottom: 1px solid #DCDBDB;
+}
+.c-company-info__key:last-of-type, .c-company-info__value:last-of-type {
+  border-bottom: none;
 }
 
 .c-hamburger-menu {
   width: 30px;
   height: 30px;
   position: relative;
+  z-index: 2;
 }
 .c-hamburger-menu::before, .c-hamburger-menu::after {
   position: absolute;
@@ -460,14 +459,67 @@ th {
 .c-hamburger-menu::after {
   top: 19px;
 }
-.c-hamburger-menu:hover::before, .c-hamburger-menu:hover::after {
+
+.open-menu .c-hamburger-menu::before, .open-menu .c-hamburger-menu::after {
   top: 14px;
+  background-color: #fff;
 }
-.c-hamburger-menu:hover::before {
+.open-menu .c-hamburger-menu::before {
   transform: rotate(45deg);
 }
-.c-hamburger-menu:hover::after {
+.open-menu .c-hamburger-menu::after {
   transform: rotate(-45deg);
+}
+
+.c-location-map {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.c-location-map:hover {
+  filter: none;
+}
+
+.c-logo {
+  width: 180px;
+  height: 25px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.c-nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: -300px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 36px 50px;
+}
+.c-nav__item {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.open-menu .c-nav {
+  display: block;
+  left: 0;
+}
+
+.c-overlay {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.open-menu .c-overlay {
+  display: block;
 }
 
 .c-page-title {
@@ -476,9 +528,21 @@ th {
   align-items: center;
 }
 
+.c-pagination {
+  display: flex;
+}
+.c-pagination__item {
+  margin: 0 20px;
+}
+
 .c-product-card__img {
   width: 100%;
   margin-bottom: 11px;
+}
+
+.c-product-specs {
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
 
 .c-sns-links {
@@ -488,11 +552,36 @@ th {
   margin-right: 30px;
 }
 
-.u-centering-container {
+.p-about {
+  max-width: 600px;
+  display: grid;
+  row-gap: 30px;
+}
+
+.p-company {
+  max-width: 600px;
+  display: grid;
+  row-gap: 20px;
+}
+
+.p-product-card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 3%;
+  margin-bottom: 40px;
+}
+
+.p-product-detail {
+  max-width: 800px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: repeat(4, auto) 1fr;
+  gap: 30px 64px;
+}
+.p-product-detail__img {
+  grid-area: 1/1/6/2;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .u-font--xsmall {
@@ -505,6 +594,13 @@ th {
 
 .u-font--middle {
   font-size: 14px;
+}
+
+.u-position--center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

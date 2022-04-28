@@ -1,14 +1,14 @@
 @use '../../global/index' as global;
 
 .c-company-info {
-  font-size: 14px;
+  font-size: global.$font-middle;
   display: grid;
   grid-template-columns: 30% 70%;
 
   &__key,
   &__value {
     padding: 20px 10px;
-    border-bottom: 1px solid #DCDBDB;
+    border-bottom: 1px solid global.$gray;
   }
 
   &__key:last-of-type,

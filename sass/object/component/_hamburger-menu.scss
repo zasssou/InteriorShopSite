@@ -4,6 +4,7 @@
   width: 30px;
   height: 30px;
   position: relative;
+  z-index: 2;
 
   &::before,
   &::after {
@@ -21,16 +22,20 @@
   &::after {
     top: 19px;
   }
+}
 
-  // クリック時動作に後で書き換え
-  &:hover::before,
-  &:hover::after {
-    top: 14px;
+.open-menu .c-hamburger-menu {
+  &::before,
+  &::after {
+    top: 14px;    
+    background-color: global.$white;
   }
-  &:hover::before {
+
+  &::before {
     transform: rotate(45deg);
   }
-  &:hover::after {
+
+  &::after {
     transform: rotate(-45deg);
   }
 }
