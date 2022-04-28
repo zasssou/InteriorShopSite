@@ -1,7 +1,0 @@
-@use '../../global/index' as global;
-
-.p-about {
-  max-width: global.$about-max-width;
-  display: grid;
-  row-gap: 30px;
-}
