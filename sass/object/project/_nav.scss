@@ -1,6 +1,6 @@
 @use '../../global/index' as global;
 
-.c-nav {
+.p-nav {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -15,7 +15,7 @@
   }
 }
 
-.open-menu .c-nav {
+.open-menu .p-nav {
   display: block;
   left: 0;
 }
