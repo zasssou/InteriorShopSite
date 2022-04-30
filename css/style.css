@@ -493,10 +493,6 @@ th {
 
 .c-logo {
   width: 180px;
-  height: 25px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .c-nav {
@@ -550,10 +546,6 @@ th {
 .c-product-card__img {
   width: 100%;
   margin-bottom: 11px;
-  transition: all 0.5s;
-}
-.c-product-card__img:hover {
-  opacity: 0.7;
 }
 
 .c-product-specs {
