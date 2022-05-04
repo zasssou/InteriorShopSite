@@ -1,0 +1,30 @@
+// ------------------------------------------------
+// color
+// ------------------------------------------------
+$black: #000;
+$dark-gray: #333;
+$white: #fff;
+$gray: #DCDBDB;
+
+
+// ------------------------------------------------
+// font
+// ------------------------------------------------
+$font-xsmall: 1.0rem;
+$font-small: 1.2rem;
+$font-middle: 1.4rem;
+
+$default-font-family: 'Meiryo', 'sans-serif';
+$default-font-size: $font-small;
+$default-line-height: 1.5em;
+
+
+// ------------------------------------------------
+// value
+// ------------------------------------------------
+$content-max-width: 1360px;
+$content-horizontal-padding: 40px;
+$about-max-width: 600px;
+$company-max-width: 600px;
+$product-detail-width: 800px;
+$breakpoint: 900px;

@@ -1,0 +1,9 @@
+@use '../../global/index' as global;
+
+.c-link-button {
+  font-size: global.$font-middle;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

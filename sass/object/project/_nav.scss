@@ -1,0 +1,21 @@
+@use '../../global/index' as global;
+
+.p-nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: -300px;
+  transition: all 0.5s;
+  color: global.$white;
+  padding: 36px 50px;
+
+  &__item {
+    font-size: global.$font-middle;
+    margin-bottom: 14px;
+  }
+}
+
+.open-menu .p-nav {
+  display: block;
+  left: 0;
+}

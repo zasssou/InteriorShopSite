@@ -1,0 +1,20 @@
+@use '../global/index' as global;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: global.$default-font-family;
+  font-size: global.$default-font-size;
+  line-height: global.$default-line-height;
+  color: global.$dark-gray;
+}
+
+a {
+  transition: all 0.5s;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}

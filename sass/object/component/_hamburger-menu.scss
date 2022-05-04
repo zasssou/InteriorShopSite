@@ -1,0 +1,41 @@
+@use '../../global/index' as global;
+
+.c-hamburger-menu {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: global.$black;
+    transition: all 0.5s;
+  }
+
+  &::before {
+    top: 11px;
+  }
+  &::after {
+    top: 19px;
+  }
+}
+
+.open-menu .c-hamburger-menu {
+  &::before,
+  &::after {
+    top: 14px;    
+    background-color: global.$white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
