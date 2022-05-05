@@ -8,12 +8,15 @@
   transition: filter 0.5s;
 
   &:hover {
-    filter: none;
+    @media screen and (min-width: global.$breakpoint) {
+      filter: none;
+    }
   }
 }
 
 @media screen and (max-width: global.$breakpoint) {
   .c-location-map {
     width: 100%;
+    filter: none;
   }
 }

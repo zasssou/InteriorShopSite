@@ -12,8 +12,10 @@ body {
 a {
   transition: all 0.5s;
 }
-a:hover {
-  opacity: 0.7;
+@media screen and (min-width: 900px) {
+  a:hover {
+    opacity: 0.7;
+  }
 }
 
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -530,13 +532,16 @@ th {
   filter: grayscale(100%);
   transition: filter 0.5s;
 }
-.c-location-map:hover {
-  filter: none;
+@media screen and (min-width: 900px) {
+  .c-location-map:hover {
+    filter: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .c-location-map {
     width: 100%;
+    filter: none;
   }
 }
 .c-logo {
