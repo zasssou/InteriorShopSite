@@ -2,10 +2,18 @@
 
 .c-location-map {
   margin: 20px 0;
+  width: global.$company-max-width;
+  height: 300px;
   filter:grayscale(100%);
   transition: filter 0.5s;
 
   &:hover {
     filter: none;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint) {
+  .c-location-map {
+    width: 100%;
   }
 }

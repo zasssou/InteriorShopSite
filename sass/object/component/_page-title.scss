@@ -6,3 +6,9 @@
   align-items: center;
   font-size: global.$font-middle;
 }
+
+@media screen and (max-width: global.$breakpoint) {
+  .c-page-title {
+    margin-top: 8px;
+  }
+}

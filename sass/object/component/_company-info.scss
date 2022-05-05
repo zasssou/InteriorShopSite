@@ -1,6 +1,7 @@
 @use '../../global/index' as global;
 
 .c-company-info {
+  width: global.$company-max-width;
   font-size: global.$font-middle;
   display: grid;
   grid-template-columns: 30% 70%;
@@ -14,5 +15,17 @@
   &__key:last-of-type,
   &__value:last-of-type {
     border-bottom: none;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint) {
+  .c-company-info {
+    width: 100%;
+    grid-template-columns: 1fr;
+
+    &__key {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
   }
 }

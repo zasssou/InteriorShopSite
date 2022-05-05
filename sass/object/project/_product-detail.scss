@@ -13,3 +13,15 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: global.$breakpoint) {
+  .p-product-detail {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+
+    &__img {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
+}

@@ -3,3 +3,11 @@
 .l-footer {
   @include global.flex-center-between;
 }
+
+@media screen and (max-width: global.$breakpoint) {
+  .l-footer {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+}

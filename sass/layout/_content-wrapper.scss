@@ -9,3 +9,9 @@
   display: grid;
   grid-template-rows: 88px auto 42px;
 }
+
+@media screen and (max-width: global.$breakpoint) {
+  .l-content-wrapper {
+    grid-template-rows: 82px auto 76px;
+  }
+}
