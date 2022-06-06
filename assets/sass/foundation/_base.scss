@@ -11,6 +11,11 @@ body {
   color: global.$dark-gray;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 a {
   transition: all 0.5s;
   

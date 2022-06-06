@@ -3,12 +3,10 @@
 
 架空の家具ショップのサイト
 
-
-#### 制作期間
-2022/4/24 ~ 2022/4/28 15時間ほど
-
+#### 制作
+- 工数：25時間ほど
 - FLOCSS & SASS
-- 後ほどWordpress導入
+- WordPress対応
 
 #### 完成品
 https://zasssou.github.io/InteriorShopSite/
